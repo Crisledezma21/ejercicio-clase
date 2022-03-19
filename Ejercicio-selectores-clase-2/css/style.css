@@ -1,0 +1,56 @@
+/* Selector de etiqueta o selector de elemento */
+h1 {
+    color: red;
+    font-size: 15px;
+}
+
+/* Selector de id */
+#sub {
+    color: blue;
+    font-size: 20px;
+}
+
+/* Selector de clase */
+.paragraph {
+    color: purple;
+    font-size: 20px;
+}
+
+/* Selector por desendencia */
+.container p {
+    color: rebeccapurple;
+    font-size: 20px;
+}
+
+/* Selector Descendente */
+.secondary-container .MainText{
+    color: springgreen;
+    font-size: 20px;
+}
+
+/* Selector de atributo */
+input[type="text"] {
+    border: 4px solid greenyellow;
+    font-size: 20px;
+}
+/* Selector de atributo */
+input[type="number"] {
+    border: 4px solid rgb(255, 0, 0);
+    font-size: 20px;
+}
+
+/* Selectores de hijos directos */
+ul > li {
+    border-top: 1px dotted gray;
+    font-size: 20px;
+}
+
+/* Selectores de hermanos */
+.main-sub-text + h3 {
+    color: blueviolet;
+}
+
+/* Selector de hermanos no directos */
+.main-other-text ~ h3 {
+    color: chocolate;
+}

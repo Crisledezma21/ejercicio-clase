@@ -1,0 +1,28 @@
+.main-container {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 40px;
+}
+
+.text-container {
+    text-align: center;
+    padding: 40px 20px 40px 20px;
+    background-color: #c8d6e5;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    text-align: center;
+}
+ul .item {
+    color: rgb(68, 66, 66);
+    padding: 20px 15px;
+    background-color: #dcdee0;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.title {
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
