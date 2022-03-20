@@ -1,0 +1,29 @@
+.contenedor-titulos-pagina {
+    border: 1px solid #9b59b6;
+    padding: 20px 30px;
+    margin: 20px 0;
+}
+.contenedor-subtitulos-pagina {
+    border: 1px solid #3498db;
+}
+.contenedor-noticia {
+    background-color: #2ecc71;
+    padding: 30px 15px;
+}
+.contenedor-noticia .titulo-noticia p {
+    color: white;
+    font-weight: 900;
+}
+.contenedor-noticia .img-noticia img {
+    height: 300px;
+    width: 100%;
+}
+.contenedor-enlaces {
+    margin-top: 50px;
+    padding-left: 30px;
+}
+.contenedor-ejemplo-bold {
+    padding: 30px 20px 50px 80px;
+    font-size: 16px;
+    font-weight: bold;
+}
