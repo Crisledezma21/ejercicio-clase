@@ -11,3 +11,17 @@ console.log('getElementsByClassName', paragraphListClass);
 
 //Como agregar CSS a un elemento
 texto.classList.add('title');
+
+let btn = document.getElementById('btn');
+console.log('btn', btn);
+
+btn.addEventListener('click', changeActive);
+
+function changeActive() {
+    console.log('click');
+    let paragraph = document.getElementsByClassName('g-text');
+    console.log('paragraph',paragraph);
+    for(let i=0; i <= paragraph.length; i++) {
+        console.log('indice',i); 
+    }
+}
