@@ -22,6 +22,12 @@ function changeActive() {
     let paragraph = document.getElementsByClassName('g-text');
     console.log('paragraph',paragraph);
     for(let i=0; i <= paragraph.length; i++) {
+        if(paragraph[i].classList.contains('active')) {
+            paragraph[i].classList.remove('active');
+            console.log('El elemento', paragraph[i],'Esta activo');
+        }else{
+            paragraph[i].classList.add('active');
+        }
         console.log('indice',i); 
     }
 }
