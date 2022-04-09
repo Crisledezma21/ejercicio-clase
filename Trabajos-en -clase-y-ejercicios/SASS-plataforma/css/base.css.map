@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,qBAAqB,CAAC;EACpB,KAAK,EDDE,OAAiB;CCIxB;;AAEF,AAEI,iBAFa,CACf,gBAAgB,CACd,CAAC,CAAC;EACA,KAAK,EDTF,OAAiB;CCSH",
+    "sources": [
+        "../sass/base.sass",
+        "../sass/_variables.sass",
+        "../sass/_estilos-generales.sass"
+    ],
+    "names": [],
+    "file": "base.css"
+}
