@@ -1,0 +1,21 @@
+.contenedor-principal
+  background-color: $negro
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.contenedor-titulo-principal
+  @extend %titulos
+  background-color: $purpura
+  color: $blanco
+  text-align: center
+  padding: 15px
+
+.contenedor-flexible
+  @include contenidoFlexible($blanco)
+  @extend %titulos
+  .item
+    @include itemContenido($turquesa,$negro,1)
+    p
+      @extend %parrafos

@@ -1,0 +1,38 @@
+.contenedor-titulo-principal, .contenedor-flexible {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.contenedor-flexible .item p {
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.contenedor-principal {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenedor-titulo-principal {
+  background-color: #9e1dd1;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.contenedor-flexible {
+  background-color: white;
+  display: flex;
+}
+
+.contenedor-flexible .item {
+  background-color: #2ff0d6;
+  color: black;
+  flex-grow: 1;
+  margin: 10px;
+  padding: 10px;
+}
+/*# sourceMappingURL=base.css.map */
