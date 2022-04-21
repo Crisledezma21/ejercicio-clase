@@ -26,6 +26,7 @@
 .contenedor-flexible {
   background-color: white;
   display: flex;
+  flex-wrap: np-wrap;
 }
 
 .contenedor-flexible .item {

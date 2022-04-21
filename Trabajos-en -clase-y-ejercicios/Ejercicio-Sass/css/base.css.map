@@ -5,7 +5,8 @@
         "../sass/base.sass",
         "../sass/_variables.sass",
         "../sass/_general.sass",
-        "../sass/_extends.sass"
+        "../sass/_extends.sass",
+        "../sass/_mixins.sass"
     ],
     "names": [],
     "file": "base.css"

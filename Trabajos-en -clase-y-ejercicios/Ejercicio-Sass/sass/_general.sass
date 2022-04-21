@@ -5,6 +5,9 @@ body
   padding: 10% 10%
   background-color: $main-color
 
+.pb-2
+  padding-bottom: 2%
+
 .item
   background-color: $gray
 
@@ -15,3 +18,26 @@ body
 .item h2
   color: $main-color
   @extend .general-text
+
+.main-content h2
+  @include text($dark-gray,Helvetica,22px)
+
+.main-content p
+  @include text($light-gray,monospace,16px)
+
+.content .btn-send
+  @include btn($main-color,#ffffff,140px)
+
+.content .btn-cancel
+  @include btn($danger-color,#ffffff,140px)
+
+.main-contact-form
+  padding: 20px
+  background: $back-gray
+
+.main-form h1
+  @include text($dark-gray,Helvetica,30px)
+
+.main-form label
+  @include text()
+
