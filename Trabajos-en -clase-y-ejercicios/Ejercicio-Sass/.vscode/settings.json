@@ -3,13 +3,21 @@
   "liveSassCompile.settings.autoprefix": [],
   "liveSassCompile.settings.generateMap": false,
   "sass.andStared": [
-    
+
 
     "active",
     "focus",
     "hover",
     "nth-child"
   ],
+  "liveSassCompile.settings.formats": [
+
+    {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "~/../css"
+    }
+],
   "liveSassCompile.settings.excludeList": [
 
     "**/node_modules/**",

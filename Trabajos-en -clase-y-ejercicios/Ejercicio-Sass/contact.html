@@ -10,20 +10,43 @@
 
 <body>
   <div class="main-contact-form">
-    <form class="main-form">
+    <form class="main-form" novalidate>
       <div>
         <h1>Contact Us</h1>
       </div>
-      <div class="field-container">
-        <div>
-          <label for="name">Nombre</label>
+      <div class="d-flex">
+        <div class="field-container px-2">
+          <div>
+            <label class="pb-2" for="name">Name</label>
+          </div>
+          <div>
+            <input type="text" id="name" name="name">
+          </div>
         </div>
-        <div>
-          <input type="text" id="name" name="name">
+        <div class="field-container px-2">
+          <div>
+            <label class="pb-2" for="lastname">Last Name</label>
+          </div>
+          <div>
+            <input type="text" id="lastname" name="lastname">
+          </div>
+        </div>
+        <div class="field-container px-2">
+          <div>
+            <label class="pb-2" for="email">Email</label>
+          </div>
+          <div>
+            <input type="email" id="email" name="email">
+          </div>
         </div>
       </div>
+      <div>
+        <button id="btn" class="contact-btn mt-2 ml-2" type="button">send</button>
+      </div>
+
     </form>
   </div>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
