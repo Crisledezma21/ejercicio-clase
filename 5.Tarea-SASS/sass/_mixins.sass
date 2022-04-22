@@ -1,12 +1,13 @@
-@mixin contenidoFlexible($blanco)
-  background-color: $blanco
+@mixin contenidoFlexible($color)
+  background-color: $color
   display: flex
-  flex-wrap: np-wrap
+  flex-wrap: wrap
   
-@mixin itemContenido($turquesa,$negro,$grow)
-  background-color: $turquesa
-  color: $negro
+@mixin itemContenido($bg-color,$color,$grow)
+  background-color: $bg-color
+  color: $color
   flex-grow: $grow
   margin: 10px
   padding: 10px
+  width: 30%
   
