@@ -1,6 +1,3 @@
-body
-  font-family: Arial, Helvetica, sans-serif
-
 .main-container
   padding: 10% 10%
   background-color: $main-color
@@ -19,6 +16,15 @@ body
   color: $main-color
   @extend .general-text
 
+.mixin-container
+  background-color: #dfe4ea
+  padding: 20px 30px
+  margin: 30px
+
+.content
+  padding: 20px
+  background-color: #ced6e0
+
 .main-content h2
   @include text($dark-gray,Helvetica,22px)
 
@@ -26,18 +32,14 @@ body
   @include text($light-gray,monospace,16px)
 
 .content .btn-send
-  @include btn($main-color,#ffffff,140px)
+  @include btn($orange,$white,$btn-width)
 
 .content .btn-cancel
-  @include btn($danger-color,#ffffff,140px)
+  @include btn($danger-color,$white,$btn-width)
 
 .main-contact-form
   padding: 20px
   background: $back-gray
 
 .main-form h1
-  @include text($dark-gray,Helvetica,30px)
-
-.main-form label
-  @include text()
-
+  @include text($dark-gray,"Arial, Helvetica, sans-serif",30px)

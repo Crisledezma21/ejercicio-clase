@@ -1,10 +1,16 @@
-body {
+.general-text, .item p, .item h2 {
+  font-weight: bold;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-container {
   padding: 10% 10%;
   background-color: #7735f1;
+}
+
+.pb-2 {
+  padding-bottom: 2%;
 }
 
 .item {
@@ -19,9 +25,52 @@ body {
   color: #7735f1;
 }
 
-.general-text, .item p, .item h2 {
-  font-weight: bold;
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+.mixin-container {
+  background-color: #dfe4ea;
+  padding: 20px 30px;
+  margin: 30px;
 }
-/*# sourceMappingURL=base.css.map */
+
+.content {
+  padding: 20px;
+  background-color: #ced6e0;
+}
+
+.main-content h2 {
+  color: #2f3542;
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+.main-content p {
+  color: #747dbc;
+  font-family: monospace, sans-serif;
+  font-size: 16px;
+}
+
+.content .btn-send {
+  border: none;
+  background: #ff7f50;
+  padding: 20px 30px;
+  color: #ffffff;
+  width: 140px;
+}
+
+.content .btn-cancel {
+  border: none;
+  background: #ff4757;
+  padding: 20px 30px;
+  color: #ffffff;
+  width: 140px;
+}
+
+.main-contact-form {
+  padding: 20px;
+  background: #f7f7f7;
+}
+
+.main-form h1 {
+  color: #2f3542;
+  font-family: "Arial, Helvetica, sans-serif", sans-serif;
+  font-size: 30px;
+}
