@@ -1,0 +1,101 @@
+.fixed-nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.btn-nav-secundario {
+  cursor: pointer;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.btn-nav-secundario:hover, .btn-nav-secundario:focus {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+header {
+  background-color: black;
+}
+
+.fixed-nav button {
+  border: none;
+  background-color: black !important;
+}
+
+.background-pink {
+  background-color: #f53160;
+}
+
+.mt-13rem {
+  margin-top: 13rem;
+}
+
+.mt-4rem {
+  margin-top: 4rem;
+}
+
+.boton-google {
+  text-align: center;
+  padding: 5px 50px;
+  border: 0.3px solid #a7a7a7;
+  border-radius: 25px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.columna-anuncio a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.nav-secundario {
+  margin: 0 auto;
+  max-width: 90%;
+  height: 50px;
+}
+
+.nav-secundario i {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 15px;
+}
+
+.devices div {
+  text-align: center;
+  padding: 0 !important;
+}
+
+.devices i {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 30px;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.devices i:hover {
+  transform: scale(1.4);
+}

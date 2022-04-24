@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/b0f68107a7.js" crossorigin="anonymous"></script>
+  <title>Proyecto SASS BootStrap</title>
+</head>
+
+<body>
+  <header class="fixed-top">
+    <div class="container-fluid">
+      <div class="col-12 row mx-0 py-2">
+        <div class="col-3 row mx-0">
+          <div class="col-6 ps-2">
+            <img class="img-fluid" src="./assets/img/taskade-logo.png" alt="Logotipo Taskade">
+          </div>
+          <div class="col-6"></div>
+        </div>
+        <div class="col-9 my-auto">
+          <nav class="row text-align-center fixed-nav">
+            <a class="col" href="#">Product Demo</a>
+            <a class="col" href="">Templates</a>
+            <a class="col" href="">Pricing</a>
+            <a class="col" href="">Downloads</a>
+            <a class="col" href="">
+              <button class="m-0 p-0 btn-dark dropdown-toggle" type="button" id="defaultDropdown"
+                data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                Resources
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Security</a></li>
+                <li><a class="dropdown-item" href="#">Product Updates</a></li>
+                <li><a class="dropdown-item" href="#">Guides & Tutorials</a></li>
+                <li><a class="dropdown-item" href="#">Feedback & Suggestions</a></li>
+              </ul>
+
+            </a>
+            <a class="col" href="">Log in</a>
+            <a class="col background-pink" href="">Sign up</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="px-5">
+    <section class="row container mx-auto mt-13rem px-0">
+      <div class="col-4">
+        <div class="columna-anuncio text-center">
+          <h2 class="mt-4rem">The Ultimate To-Do List Application</h2>
+          <p class="mb-5">Manage Tasks, Write Notes, and Organize Projects. Taskade Is the Fastest Way to Get Work Done.
+          </p>
+          <button class="boton-google" type="button">
+            <img class="px-2" src="./assets/img/icon_sso_google.svg" alt="Logo Google"><span>Sign up with Google</span>
+          </button>
+          <a href="#">Sign up with email</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <video class="img-fluid" autoplay loop>
+          <source src="./assets/video/taskade_intro.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+    <section class="mb-5">
+      <h3 class="text-center mt-4rem mb-5">Plan, Organize, and Execute Your Projects.</h3>
+      <div class="row mb-4 text-center nav-secundario align-items-center px-0 mb-4">
+        <div class="col-3 btn-nav-secundario">
+          <span><i class="bi bi-share-fill"></i></span><span>Brainstorm in Mind Maps</span>
+        </div>
+        <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+        <div class="col-4 btn-nav-secundario"><i class="bi bi-kanban-fill"></i><span>Manage in Project Boards</span>
+        </div>
+        <div class="col-1"><i class="bi bi-chevron-right"></i></div>
+        <div class="col-3 btn-nav-secundario"><i class="bi bi-filter-square"></i><span>Organize in To-Do Lists</span>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <img class="img-fluid" src="./assets/img/mindmap_demo.png" alt="" srcset="">
+      </div>
+    </section>
+    <section class="mb-5">
+      <h3 class="text-center mt-4rem mb-1">Download our Apps</h3>
+      <div class="row container mx-auto devices mb-5 px-0">
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-android fa-2xl"></i>
+            <span>Android</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-apple fa-2xl"></i>
+            <span>iOS</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-apple fa-2xl"></i>
+            <span>MAC</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-windows fa-2xl"></i>
+            <span>Windows</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-linux fa-2xl"></i>
+            <span>Linux</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-chrome fa-2xl"></i>
+            <span>Chrome</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-firefox-browser fa-2xl"></i>
+            <span>Firefox</span>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="row flex-column">
+            <i class="fa-brands fa-edge fa-2xl"></i>
+            <span>Edge</span>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

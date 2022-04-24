@@ -1,0 +1,75 @@
+header
+  background-color: $negro
+
+.fixed-nav
+  a
+    @extend %anclas
+  button
+    border: none
+    background-color: $negro !important
+
+.background-pink
+  background-color: $rosa
+
+.mt-13rem
+  margin-top: 13rem
+
+.mt-4rem
+  margin-top: 4rem
+
+h2
+  @extend %titulo-h2
+
+h3
+  @extend %titulo-h3
+
+p
+  @extend %parrafos
+
+.boton-google
+  text-align: center
+  padding: 5px 50px
+  border: .3px solid $gris-claro
+  border-radius: 25px
+  background-color: $blanco
+  cursor: pointer
+
+.columna-anuncio
+  a
+    display: block
+    text-align: center
+    text-decoration: none
+    color: $negro
+    cursor: pointer
+    padding: 20px
+
+.nav-secundario
+  margin: 0 auto
+  max-width: 90%
+  height: 50px
+  i
+    font-size: 20px
+    font-weight: bold
+    padding: 0 15px
+
+.btn-nav-secundario
+  @extend %btn-nav-secundario
+
+.btn-nav-secundario:focus
+  @extend %btn-nav-secundario:hover
+
+.devices
+  div
+    text-align: center
+    padding: 0 !important
+
+.devices
+  i
+    @include centrar-vertical(3rem,3rem)
+    font-size: 30px
+    transition: all .2s ease-in-out
+    cursor: pointer
+
+.devices
+  i:hover
+    transform: scale(1.4)
