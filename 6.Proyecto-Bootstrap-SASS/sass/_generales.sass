@@ -23,8 +23,8 @@ h2
 h3
   @extend %titulo-h3
 
-p
-  @extend %parrafos
+.parrafo-informativo
+  @extend %parrafos-info
 
 .boton-google
   text-align: center
@@ -37,7 +37,6 @@ p
 .columna-anuncio
   a
     display: block
-    text-align: center
     text-decoration: none
     color: $negro
     cursor: pointer
@@ -73,3 +72,56 @@ p
 .devices
   i:hover
     transform: scale(1.4)
+
+.imagen-cambiable
+  padding: 5rem
+  background-image: url("../assets/img/customizeBG.svg")
+  background-repeat: no-repeat
+  background-size: 100% 100%
+
+.link-live-demo
+  color: $azul
+  font-size: 1.5rem
+  font-weight: 800
+  cursor: pointer
+  display: inline-block
+  position: relative
+
+.link-live-demo:after
+  content: ''
+  position: absolute
+  width: 100%
+  transform: scaleX(0)
+  height: 2px
+  top: 5px
+  left: 0
+  transform-origin: bottom right
+  transition: transform 0.25s ease-out
+
+.link-live-demo:hover:after
+  content: '___________'
+  transform: scaleX(1)
+  transform-origin: bottom left
+
+.lista-interactiva
+  li
+    margin: 10px
+    padding: 5px
+    width: 200px
+    height: 50px
+    display: block
+    cursor: pointer
+
+  p
+    @include centrar-vertical(2rem,1rem)
+    margin: 0
+    padding: 12px
+
+  li:hover
+    @extend %hover-lista
+
+.ul-lista-interactiva
+  padding-left: 0 !important
+
+.hover-simulado
+  @extend %hover-lista

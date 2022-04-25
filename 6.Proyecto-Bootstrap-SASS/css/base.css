@@ -9,9 +9,10 @@
 h2 {
   font-size: 3rem;
   font-weight: 900;
+  text-align: left;
 }
 
-p {
+.parrafo-informativo {
   font-size: 1.5rem;
   line-height: 1.2;
 }
@@ -29,6 +30,12 @@ h3 {
 
 .btn-nav-secundario:hover, .btn-nav-secundario:focus {
   background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+.lista-interactiva li:hover, .hover-simulado {
+  background-color: #f7e0ea;
+  font-weight: bold;
   border-radius: 5px;
 }
 
@@ -64,7 +71,6 @@ header {
 
 .columna-anuncio a {
   display: block;
-  text-align: center;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -98,4 +104,58 @@ header {
 
 .devices i:hover {
   transform: scale(1.4);
+}
+
+.imagen-cambiable {
+  padding: 5rem;
+  background-image: url("../assets/img/customizeBG.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.link-live-demo {
+  color: #047efe;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.link-live-demo:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  top: 5px;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link-live-demo:hover:after {
+  content: '___________';
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.lista-interactiva li {
+  margin: 10px;
+  padding: 5px;
+  width: 200px;
+  height: 50px;
+  display: block;
+  cursor: pointer;
+}
+
+.lista-interactiva p {
+  height: 2rem;
+  line-height: 1rem;
+  margin: 0;
+  padding: 12px;
+}
+
+.ul-lista-interactiva {
+  padding-left: 0 !important;
 }
