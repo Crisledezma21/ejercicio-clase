@@ -59,8 +59,9 @@ header nav li:hover:after {
   transform-origin: bottom left;
 }
 
-header nav a {
-  color: white !important;
+header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
+  background-color: black;
+  color: white;
 }
 
 .dropdown-menu {
@@ -180,7 +181,7 @@ header nav a {
 }
 
 .ul-lista-interactiva {
-  padding-left: 0 !important;
+  padding-left: 0;
 }
 
 .contenedor-formulario {
@@ -263,3 +264,4 @@ form button {
     min-height: 600px;
   }
 }
+/*# sourceMappingURL=base.css.map */
