@@ -45,18 +45,25 @@ header nav li:after {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   height: 2px;
   top: 12px;
-  left: 0;
-  transform-origin: bottom right;
+  left: 7px;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 header nav li:hover:after {
   content: "___________";
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
@@ -122,12 +129,14 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
   height: 3rem;
   line-height: 3rem;
   font-size: 30px;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   cursor: pointer;
 }
 
 .devices i:hover {
-  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 
 .imagen-cambiable {
@@ -150,18 +159,25 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   height: 2px;
   top: 5px;
   left: 0;
-  transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .animacion-underline:hover:after {
   content: "___________";
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .lista-interactiva li {
@@ -192,7 +208,8 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
 
 .pink-underline {
   text-decoration: underline;
-  text-decoration-color: #f53160;
+  -webkit-text-decoration-color: #f53160;
+          text-decoration-color: #f53160;
 }
 
 .color-pink {
@@ -234,18 +251,25 @@ form button {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
   height: 2px;
   top: 5px;
   left: 0;
-  transform-origin: bottom right;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
 .footer-up li:hover:after {
   content: "___________";
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
 }
 
 .img-footer-container {

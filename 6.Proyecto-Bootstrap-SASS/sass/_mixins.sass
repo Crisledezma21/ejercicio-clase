@@ -10,14 +10,14 @@
   display: inline-block
   position: relative
   
-@mixin animacion-underline-after($height,$top)
+@mixin animacion-underline-after($height,$top,$left)
   content: ''
   position: absolute
   width: 100%
   transform: scaleX(0)
   height: $height
   top: $top
-  left: 0
+  left: $left
   transform-origin: bottom right
   transition: transform 0.25s ease-out
 
