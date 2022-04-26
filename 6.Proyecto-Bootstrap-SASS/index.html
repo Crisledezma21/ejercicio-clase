@@ -15,21 +15,63 @@
 
 <body>
   <header class="fixed-top">
-    <div class="container-fluid">
-      <div class="col-12 row mx-0 py-2">
-        <div class="col-3 row mx-0">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="img-fluid logo" src="./assets/img/taskade-logo.png" alt="Logotipo Taskade"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Product Demo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Templates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Downloads</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Security</a></li>
+                <li><a class="dropdown-item" href="#">Product updates</a></li>
+                <li><a class="dropdown-item" href="#">Guides & Tutorials</a></li>
+                <li><a class="dropdown-item" href="#">Feedback & Suggestions</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a id="fondo-rosa" class="nav-link" href="#">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="container-fluid">
+      <div class="col-12 d-flex flex-wrap mx-0 py-2">
+        <div class="col-3 mx-0">
           <div class="col-6 ps-2">
             <img class="img-fluid" src="./assets/img/taskade-logo.png" alt="Logotipo Taskade">
           </div>
           <div class="col-6"></div>
         </div>
         <div class="col-9 my-auto">
-          <nav class="row text-align-center fixed-nav">
-            <a class="col" href="#">Product Demo</a>
-            <a class="col" href="">Templates</a>
-            <a class="col" href="">Pricing</a>
-            <a class="col" href="">Downloads</a>
-            <a class="col" href="">
+          <nav class="d-flex flex-wrap justify-content-evenly text-align-center fixed-nav">
+            <a href="#">Product Demo</a>
+            <a href="">Templates</a>
+            <a href="">Pricing</a>
+            <a href="">Downloads</a>
+            <a href="">
               <button class="m-0 p-0 btn-dark dropdown-toggle" type="button" id="defaultDropdown"
                 data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
                 Resources
@@ -43,149 +85,138 @@
               </ul>
 
             </a>
-            <a class="col" href="">Log in</a>
-            <a class="col background-pink" href="">Sign up</a>
+            <a href="">Log in</a>
+            <a class="background-pink" href="">Sign up</a>
           </nav>
         </div>
       </div>
-    </div>
+    </div> -->
   </header>
-  <main class="px-5">
-    <section class="row container mx-auto mt-13rem px-0">
-      <div class="col-4">
+  <main class="px-lg-5 text-center text-lg-start">
+    <!-- Primer section contiene el video -->
+    <section class="row container mx-auto px-0 pt-5 mt-lg-5">
+      <div class="col-lg-4">
         <div class="columna-anuncio">
           <h2 class="mt-4rem">The Ultimate To-Do List Application</h2>
-          <p class="mb-5 parrafo-informativo">Manage Tasks, Write Notes, and Organize Projects. Taskade Is the Fastest Way to Get Work Done.
-          </p>
-          <button class="boton-google" type="button">
-            <img class="px-2" src="./assets/img/icon_sso_google.svg" alt="Logo Google"><span>Sign up with Google</span>
-          </button>
+          <p class="mb-5 parrafo-informativo">Manage Tasks, Write Notes, and Organize Projects. Taskade Is the Fastest
+            Way to Get Work Done.</p>
+          <div class="d-flex justify-content-center">
+            <button class="boton-google" type="button">
+              <img class="px-2" src="./assets/img/icon_sso_google.svg" alt="Logo Google"><span>Sign up with
+                Google</span>
+            </button>
+          </div>
           <a class="text-center" href="#">Sign up with email</a>
         </div>
       </div>
-      <div class="col-8">
+      <div class="col-lg-8">
         <video class="img-fluid" autoplay loop>
           <source src="./assets/video/taskade_intro.mp4" type="video/mp4">
         </video>
       </div>
     </section>
+    <!-- Segundo section planea, ejecuta, organiza-->
     <section class="mb-5">
       <h3 class="text-center mt-4rem mb-5">Plan, Organize, and Execute Your Projects.</h3>
-      <div class="row mb-4 text-center nav-secundario align-items-center px-0 mb-4">
-        <div class="col-3 btn-nav-secundario">
+      <div class="d-flex flex-wrap justify-content-center mb-4 text-center nav-secundario align-items-center px-0 mb-4">
+        <div class="btn-nav-secundario">
           <span><i class="bi bi-share-fill"></i></span><span>Brainstorm in Mind Maps</span>
         </div>
-        <div class="col-1"><i class="bi bi-chevron-right"></i></div>
-        <div class="col-4 btn-nav-secundario"><i class="bi bi-kanban-fill"></i><span>Manage in Project Boards</span>
+        <div class=""><i class="bi bi-chevron-right"></i></div>
+        <div class="btn-nav-secundario"><i class="bi bi-kanban-fill"></i><span>Manage in Project Boards</span>
         </div>
-        <div class="col-1"><i class="bi bi-chevron-right"></i></div>
-        <div class="col-3 btn-nav-secundario"><i class="bi bi-filter-square"></i><span>Organize in To-Do Lists</span>
+        <div><i class="bi bi-chevron-right"></i></div>
+        <div class="btn-nav-secundario"><i class="bi bi-filter-square"></i><span>Organize in To-Do Lists</span>
         </div>
       </div>
       <div class="container-fluid">
         <img class="img-fluid" src="./assets/img/mindmap_demo.png" alt="" srcset="">
       </div>
     </section>
-    <section class="mb-5">
+    <!-- Tercer section Baja nuestras aplicaciones -->
+    <section class="mb-lg-5">
       <h3 class="text-center mt-4rem mb-1">Download our Apps</h3>
-      <div class="row container mx-auto devices mb-5 px-0">
-        <div class="col-1"></div>
-        <div class="col-1"></div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-android fa-2xl"></i>
-            <span>Android</span>
-          </div>
+      <div class="d-flex flex-wrap justify-content-center container mx-auto devices mb-5 px-0">
+        <div class="d-flex flex-column">
+          <i class="fa-brands fa-android fa-2xl"></i>
+          <span>Android</span>
         </div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-apple fa-2xl"></i>
-            <span>iOS</span>
-          </div>
+        <div class="row flex-column">
+          <i class="fa-brands fa-apple fa-2xl"></i>
+          <span>iOS</span>
         </div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-apple fa-2xl"></i>
-            <span>MAC</span>
-          </div>
+        <div class="row flex-column">
+          <i class="fa-brands fa-apple fa-2xl"></i>
+          <span>MAC</span>
         </div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-windows fa-2xl"></i>
-            <span>Windows</span>
-          </div>
+        <div class="row flex-column">
+          <i class="fa-brands fa-windows fa-2xl"></i>
+          <span>Windows</span>
         </div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-linux fa-2xl"></i>
-            <span>Linux</span>
-          </div>
+        <div class="row flex-column">
+          <i class="fa-brands fa-linux fa-2xl"></i>
+          <span>Linux</span>
         </div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-chrome fa-2xl"></i>
-            <span>Chrome</span>
-          </div>
+        <div class="row flex-column">
+          <i class="fa-brands fa-chrome fa-2xl"></i>
+          <span>Chrome</span>
         </div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-firefox-browser fa-2xl"></i>
-            <span>Firefox</span>
-          </div>
+        <div class="row flex-column">
+          <i class="fa-brands fa-firefox-browser fa-2xl"></i>
+          <span>Firefox</span>
         </div>
-        <div class="col-1">
-          <div class="row flex-column">
-            <i class="fa-brands fa-edge fa-2xl"></i>
-            <span>Edge</span>
-          </div>
+        <div class="row flex-column">
+          <i class="fa-brands fa-edge fa-2xl"></i>
+          <span>Edge</span>
         </div>
-        <div class="col-1"></div>
-        <div class="col-1"></div>
       </div>
     </section>
-    <section class="container-fluid row mx-auto pt-5 mb-5">
-      <div class="col-4">
-        <div class="columna-anuncio text-left">
+    <!-- Cuarto Section Organizar Tareas -->
+    <section class="container-fluid row mx-auto pt-lg-5 mb-5">
+      <div class="col-lg-4">
+        <div class="columna-anuncio">
           <h2 class="mt-4rem">Organize & Manage Tasks & To-Do Lists</h2>
-          <p class="mb-5 parrafo-informativo">Taskade is the ultimate task management software with unlimited flexibility, designed to help individuals and remote teams work together in one unified workspace.</p>
-          <p class="link-live-demo m-0">Live Demo<span class="px-2 m-0"><i class="fa-solid fa-circle-arrow-right"></i></span></p>
+          <p class="mb-5 parrafo-informativo">Taskade is the ultimate task management software with unlimited
+            flexibility, designed to help individuals and remote teams work together in one unified workspace.</p>
+          <p class="animacion-underline m-0">Live Demo<span class="px-2 m-0"><i
+                class="fa-solid fa-circle-arrow-right"></i></span></p>
           <div class="lista-interactiva">
-            <ul class="ul-lista-interactiva mt-3">
+            <ul class="ul-lista-interactiva mt-3 mb-5 mb-lg-0 d-flex flex-wrap flex-lg-column pd-lg-0">
               <li id="btn1">
-                <p>
-                  <span>
+                <p class="d-flex flex-column flex-wrap flex-lg-row">
+                  <span class="p-2 p-lg-0">
                     <i class="fa-solid fa-list-check px-2 fa-2xl"></i>
                   </span>
                   To-Do List
                 </p>
               </li>
               <li id="btn2">
-                <p>
-                  <span>
+                <p class="d-flex flex-column flex-wrap flex-lg-row">
+                  <span class="p-2 p-lg-0">
                     <i class="fa-solid fa-bars-progress px-2 fa-2xl"></i>
                   </span>
                   Project Board
                 </p>
               </li>
               <li id="btn3">
-                <p>
-                  <span>
+                <p class="d-flex flex-column flex-wrap flex-lg-row">
+                  <span class="p-2 p-lg-0">
                     <i class="fa-solid fa-calendar-day px-2 fa-2xl"></i>
                   </span>
                   Calendar Task
                 </p>
               </li>
               <li id="btn4">
-                <p>
-                  <span>
+                <p class="d-flex flex-column flex-wrap flex-lg-row">
+                  <span class="p-2 p-lg-0">
                     <i class="fa-solid fa-sheet-plastic px-2 fa-2xl"></i>
                   </span>
                   Action Sheet
                 </p>
               </li>
               <li id="btn5">
-                <p>
-                  <span>
+                <p class="d-flex flex-column flex-wrap flex-lg-row">
+                  <span class="p-2 p-lg-0">
                     <i class="fa-solid fa-network-wired px-2 fa-2xl"></i>
                   </span>
                   Mind Map
@@ -195,18 +226,260 @@
           </div>
         </div>
       </div>
-      <div class="col-8 imagen-cambiable mx-auto position-relative p-0">
-        <div class="overlay position-absolute top-0 end-0">
-          <img id="overlay" src="./assets/img/listView.svg" alt="">
+      <div class="alto-minimo col-lg-8 imagen-cambiable mx-auto position-relative p-0">
+        <div class="overlay position-absolute top-5 end-0">
+          <img id="overlay" class="mw-100" src="./assets/img/listView.svg" alt="">
         </div>
+      </div>
+    </section>
+    <!-- Quinto Section Share Tasks Online -->
+    <section class="container-fluid row mx-auto pt-5 mb-5">
+      <div class="col-lg-7">
+        <img class="img-fluid" src="./assets/img/collaborateBG.svg" alt="Imagen Colaboracion">
+      </div>
+      <div class="col-lg-5">
+        <h2 class="mt-4rem">Share Tasks Online</h2>
+        <p class="mb-5 parrafo-informativo">Share your to-do lists, mind maps, and projects online for free with your
+          teammates, and collaborate together in real-time, across any device. Communicate with your team via built-in
+          free and unlimited chat and video conferencing on every single project.</p>
+        <p class="animacion-underline m-0">Live Demo<span class="px-2 m-0"><i
+              class="fa-solid fa-circle-arrow-right"></i></span></p>
+      </div>
+    </section>
+    <!-- Sexto Section Manage Team Tasks -->
+    <section class="container-fluid row mx-auto pt-5 mb-5">
+      <div class="col-lg-5">
+        <img class="w-50" src="./assets/img/manageAside.svg" alt="">
+        <h2 class="mt-4rem">Manage Team Tasks</h2>
+        <p class="mb-5 parrafo-informativo">Plan, organize, and prioritize upcoming tasks in the team roadmap. Taskade lets you automate your workflows and get work done.</p>
+        <p class="animacion-underline m-0">Get Started<span class="px-2 m-0"><i
+              class="fa-solid fa-circle-arrow-right"></i></span></p>
+      </div>
+      <div class="col-lg-7">
+        <img class="img-fluid" src="./assets/img/manageBG.svg" alt="Imagen Colaboracion">
+      </div>
+    </section>
+    <!-- Septimo section Plan Tasks & Calendar -->
+    <section class="container-fluid row mx-auto pt-5 mb-5">
+      <div class="col-lg-7">
+        <img class="img-fluid" src="./assets/img/track_main.svg" alt="Imagen Colaboracion">
+      </div>
+      <div class="col-lg-5">
+        <img class="w-50" src="./assets/img/track_aside.svg" alt="">
+        <h2 class="mt-4rem">Plan Tasks & Calendar</h2>
+        <p class="mb-5 parrafo-informativo">Track your tasks and progress across every projects in one unified calendar.
+          Toggle the calendar view for each projects. Taskade helps you plan out and track multiple projects.</p>
+        <p class="animacion-underline m-0">Get Started<span class="px-2 m-0"><i
+              class="fa-solid fa-circle-arrow-right"></i></span></p>
+      </div>
+    </section>
+    <!-- Octavo Section Formulario -->
+    <section class="container-fluid mx-auto pt-5 mb-5">
+      <div class="row contenedor-formulario mx-auto align-items-center pb-5">
+        <div class="col-lg-5 p-5">
+          <img src="./assets/img/ctaMain.svg" alt="">
+        </div>
+        <div class="col-lg-7">
+          <h2 class="mt-4rem">Get Work Done. <span class="pink-underline">Faster + Smarter.</span></h2>
+          <p class="mb-5 parrafo-informativo">Taskade is the ultimate online to-do list for getting work
+            done.Supercharge your productivity with smart to do lists, outliner notes, and mind maps, in one unified
+            workspace. Taskade is simple, beautiful, and fun. <span class="color-pink">Download for free</span> on Mac,
+            Windows, Chromebook, iPhone, Android and more or try the web app instantly!</p>
+          <form>
+            <input type="text" name="input" id="input" placeholder="Enter your email">
+            <button class="btn btn-danger" type="button">Sign up for free</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Noveno section Marcas -->
+    <section class="container-fluid marcas my-5 pt-5">
+      <div class="d-flex justify-content-between flex-wrap flex-lg-nowrap">
+        <div><img class="img-fluid" src="./assets/img/logo_shopee_variable.svg" alt="logo shopee"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_lyft_variable.svg" alt="logo lyft"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_compass_variable.svg" alt="logo compass"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_booking_variable.svg" alt="logo booking"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_netflix_variable.svg" alt="logo netflix"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_sony_variable.svg" alt="logo sony"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_transferwise_variable.svg" alt="logo transferwise"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_activision_variable.svg" alt="logo activision"></div>
+        <div><img class="img-fluid" src="./assets/img/logo_capitalone_variable.svg" alt="logo capital one"></div>
       </div>
     </section>
   </main>
 
+  <footer class="container-fluid">
+    <div class="footer-up row p-5">
+      <div class="col-lg-2">
+        <ul>
+          <li>Taskade</li>
+        </ul>
+        <ul>
+          <li>About</li>
+        </ul>
+        <ul>
+          <li>Pricing</li>
+        </ul>
+        <ul>
+          <li>Press</li>
+        </ul>
+        <ul>
+          <li>Jobs</li>
+        </ul>
+        <ul>
+          <li>FAQ</li>
+        </ul>
+        <ul>
+          <li>Legal</li>
+        </ul>
+        <ul>
+          <li>Compare</li>
+        </ul>
+        <ul>
+          <li>Server Status</li>
+        </ul>
+        <ul>
+          <li>Feedback Portal</li>
+        </ul>
+        <ul>
+          <li>Help Center</li>
+        </ul>
+        <ul>
+          <li>Security</li>
+        </ul>
+        <ul>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li>Downloads</li>
+        </ul>
+        <ul>
+          <li>Android</li>
+        </ul>
+        <ul>
+          <li>iOS</li>
+        </ul>
+        <ul>
+          <li>Mac</li>
+        </ul>
+        <ul>
+          <li>Mac App Store</li>
+        </ul>
+        <ul>
+          <li>Windows</li>
+        </ul>
+        <ul>
+          <li>Microsoft Store</li>
+        </ul>
+        <ul>
+          <li>Linux</li>
+        </ul>
+        <ul>
+          <li>Snap Store</li>
+        </ul>
+        <ul>
+          <li>Chrome</li>
+        </ul>
+        <ul>
+          <li>Firefox</li>
+        </ul>
+        <ul>
+          <li>Edge</li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li>Templates</li>
+        </ul>
+        <ul>
+          <li>Featured</li>
+        </ul>
+        <ul>
+          <li>Personal</li>
+        </ul>
+        <ul>
+          <li>Project Management</li>
+        </ul>
+        <ul>
+          <li>Education</li>
+        </ul>
+        <ul>
+          <li>Task Management</li>
+        </ul>
+        <ul>
+          <li>Product Management</li>
+        </ul>
+        <ul>
+          <li>Remote Work</li>
+        </ul>
+        <ul>
+          <li>Marketing</li>
+        </ul>
+        <ul>
+          <li>More Templates</li>
+        </ul>
+      </div>
+      <div class="col-lg-2">
+        <ul>
+          <li>Designed for</li>
+        </ul>
+        <ul>
+          <li>Remote Work</li>
+        </ul>
+        <ul>
+          <li>Startups</li>
+        </ul>
+        <ul>
+          <li>Nonprofits</li>
+        </ul>
+        <ul>
+          <li>Education</li>
+        </ul>
+        <ul>
+          <li>Designers</li>
+        </ul>
+        <ul>
+          <li>Developers</li>
+        </ul>
+        <ul>
+          <li>Merketers</li>
+        </ul>
+        <ul>
+          <li>Writers</li>
+        </ul>
+        <ul>
+          <li>Thinkers</li>
+        </ul>
+        <ul>
+          <li>Mind Mapping</li>
+        </ul>
+        <ul>
+          <li>Multi-Tasking</li>
+        </ul>
+        <ul>
+          <li>Collaboration</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 px-5">
+        <p>Blog</p>
+        <div class="img-footer-container">
+          <img class="img-fluid" src="./assets/img/web3-explained-meaning-taskade.png" alt="meaning content">
+        </div>
+        <p>What Is Web3? It’s More Than Just Crypto Companies: The Powerful Rise of Web3 Startups Explained</p>
+        <p>More Posts</p>
+      </div>
+    </div>
+    <div class="footer-down">
+
+    </div>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-    <script src="./js/lista-interactiva.js"></script>
+  <script src="./js/lista-interactiva.js"></script>
 </body>
 
 </html>

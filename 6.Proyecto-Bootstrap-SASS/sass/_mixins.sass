@@ -1,4 +1,27 @@
 @mixin centrar-vertical($height,$line-height)
   height: $height
   line-height: $line-height
+
+@mixin animacion-underline($color,$font-size,$font-weight)
+  color: $color
+  font-size: $font-size
+  font-weight: $font-weight
+  cursor: pointer
+  display: inline-block
+  position: relative
   
+@mixin animacion-underline-after($height,$top)
+  content: ''
+  position: absolute
+  width: 100%
+  transform: scaleX(0)
+  height: $height
+  top: $top
+  left: 0
+  transform-origin: bottom right
+  transition: transform 0.25s ease-out
+
+@mixin animacion-underline-hover($content)
+  content: $content
+  transform: scaleX(1)
+  transform-origin: bottom left

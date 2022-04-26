@@ -1,14 +1,22 @@
 header
   background-color: $negro
+  .navbar-toggler-icon
+  nav
+    li
+      @include animacion-underline($blanco,1rem,lighter)
+    li:after
+      @include animacion-underline-after(2px,12px)
+    li:hover:after
+      @include animacion-underline-hover('___________')
+    a
+      color: $blanco !important 
+.dropdown-menu
+  background-color: $negro       
 
-.fixed-nav
-  a
-    @extend %anclas
-  button
-    border: none
-    background-color: $negro !important
+.logo
+  width: 150px
 
-.background-pink
+#fondo-rosa
   background-color: $rosa
 
 .mt-13rem
@@ -60,8 +68,7 @@ h3
 .devices
   div
     text-align: center
-    padding: 0 !important
-
+    padding: 20px
 .devices
   i
     @include centrar-vertical(3rem,3rem)
@@ -79,29 +86,32 @@ h3
   background-repeat: no-repeat
   background-size: 100% 100%
 
-.link-live-demo
-  color: $azul
-  font-size: 1.5rem
-  font-weight: 800
-  cursor: pointer
-  display: inline-block
-  position: relative
+.animacion-underline
+  @include animacion-underline($azul,1.5rem,800)
+  // color: $azul
+  // font-size: 1.5rem
+  // font-weight: 800
+  // cursor: pointer
+  // display: inline-block
+  // position: relative
 
-.link-live-demo:after
-  content: ''
-  position: absolute
-  width: 100%
-  transform: scaleX(0)
-  height: 2px
-  top: 5px
-  left: 0
-  transform-origin: bottom right
-  transition: transform 0.25s ease-out
+.animacion-underline:after
+  @include animacion-underline-after(2px,5px)
+  // content: ''
+  // position: absolute
+  // width: 100%
+  // transform: scaleX(0)
+  // height: 2px
+  // top: 5px
+  // left: 0
+  // transform-origin: bottom right
+  // transition: transform 0.25s ease-out
 
-.link-live-demo:hover:after
-  content: '___________'
-  transform: scaleX(1)
-  transform-origin: bottom left
+.animacion-underline:hover:after
+  @include animacion-underline-hover('___________')
+  // content: '___________'
+  // transform: scaleX(1)
+  // transform-origin: bottom left
 
 .lista-interactiva
   li
@@ -109,8 +119,8 @@ h3
     padding: 5px
     width: 200px
     height: 50px
-    display: block
     cursor: pointer
+    list-style: none
 
   p
     @include centrar-vertical(2rem,1rem)
@@ -125,3 +135,52 @@ h3
 
 .hover-simulado
   @extend %hover-lista
+
+.contenedor-formulario
+  background-color: rgb(255, 246, 215)
+  border-radius: 10px
+  max-width: 90%
+    
+.pink-underline
+  text-decoration: underline
+  text-decoration-color: $rosa
+
+.color-pink
+  color: $rosa
+
+form
+  input
+    padding: 8px 12px
+    border: 1px solid $gris-claro
+    width: 50%
+  button
+    background-color: $rosa !important
+    border-radius: 5pc
+
+.marcas
+  img
+    padding: 5px
+    max-width: 75%
+
+.footer-up
+  background-color: $negro
+  color: $blanco
+  li
+    @include animacion-underline($blanco,1rem,400)
+    list-style: none
+  li:after
+    @include animacion-underline-after(2px,5px)
+  li:hover:after
+    @include animacion-underline-hover('___________')
+
+.img-footer-container
+  background-color: $blanco
+  border-radius: 10px
+
+@media (max-width: 576px)
+  .alto-minimo
+    min-height: 300px
+ 
+@media (min-width: 577px)
+  .alto-minimo
+    min-height: 600px 
