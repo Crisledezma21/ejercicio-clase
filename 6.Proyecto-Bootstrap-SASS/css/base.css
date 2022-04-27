@@ -29,11 +29,13 @@ h3 {
 }
 
 .templates-section .template-item {
-  max-width: 30%;
+  min-width: 200px;
+  max-width: 400px;
+  width: 30%;
   border: 2px solid #a7a7a7;
   border-radius: 7px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .templates-section .template-item img {
