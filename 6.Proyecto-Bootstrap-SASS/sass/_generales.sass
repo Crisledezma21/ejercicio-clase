@@ -5,11 +5,14 @@ header
     li
       @include animacion-underline($blanco,1rem,lighter)
     li:after
-      @include animacion-underline-after(2px,12px)
+      @include animacion-underline-after(2px,12px,7px)
     li:hover:after
       @include animacion-underline-hover('___________')
-    a
-      color: $blanco !important 
+      #navbarDropdown
+        .dropdown-menu
+          li:hover
+            background-color: $negro
+            color: $blanco
 .dropdown-menu
   background-color: $negro       
 
@@ -96,7 +99,7 @@ h3
   // position: relative
 
 .animacion-underline:after
-  @include animacion-underline-after(2px,5px)
+  @include animacion-underline-after(2px,5px,0)
   // content: ''
   // position: absolute
   // width: 100%
@@ -131,7 +134,7 @@ h3
     @extend %hover-lista
 
 .ul-lista-interactiva
-  padding-left: 0 !important
+  padding-left: 0
 
 .hover-simulado
   @extend %hover-lista
@@ -169,7 +172,7 @@ form
     @include animacion-underline($blanco,1rem,400)
     list-style: none
   li:after
-    @include animacion-underline-after(2px,5px)
+    @include animacion-underline-after(2px,5px,0)
   li:hover:after
     @include animacion-underline-hover('___________')
 
