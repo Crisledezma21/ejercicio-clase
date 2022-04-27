@@ -9,7 +9,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 1.5em;
   font-weight: 800;
 }
 
@@ -26,6 +26,40 @@ h3 {
   background-color: #f7e0ea;
   font-weight: bold;
   border-radius: 5px;
+}
+
+.templates-section .template-item {
+  max-width: 30%;
+  border: 2px solid #a7a7a7;
+  border-radius: 7px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.templates-section .template-item img {
+  height: 128px;
+}
+
+.templates-section .template-item h4 {
+  font-size: 1em;
+}
+
+.templates-section .template-item p {
+  color: #a7a7a7;
+  line-height: 1.2;
+}
+
+.templates-section .template-item .use-template-link {
+  color: #f53160;
+}
+
+.templates-section .template-item .use-template-link span {
+  font-size: 1.2em;
+  padding-right: 5px;
+}
+
+.templates-section .template-item:hover {
+  border-color: #f53160;
 }
 
 header {
