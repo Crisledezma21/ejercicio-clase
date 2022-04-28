@@ -22,12 +22,6 @@ header
 #fondo-rosa
   background-color: $rosa
 
-.mt-13rem
-  margin-top: 13rem
-
-.mt-4rem
-  margin-top: 4rem
-
 h2
   @extend %titulo-h2
 
@@ -87,34 +81,19 @@ h3
   padding: 5rem
   background-image: url("../assets/img/customizeBG.svg")
   background-repeat: no-repeat
-  background-size: 100% 100%
+  background-size: 100% 100%    
 
 .animacion-underline
   @include animacion-underline($azul,1.5rem,800)
-  // color: $azul
-  // font-size: 1.5rem
-  // font-weight: 800
-  // cursor: pointer
-  // display: inline-block
-  // position: relative
+  // color, font-size, font-weight
 
 .animacion-underline:after
   @include animacion-underline-after(2px,5px,0)
-  // content: ''
-  // position: absolute
-  // width: 100%
-  // transform: scaleX(0)
-  // height: 2px
-  // top: 5px
-  // left: 0
-  // transform-origin: bottom right
-  // transition: transform 0.25s ease-out
+  // height, top, left
 
 .animacion-underline:hover:after
   @include animacion-underline-hover('___________')
   // content: '___________'
-  // transform: scaleX(1)
-  // transform-origin: bottom left
 
 .lista-interactiva
   li
@@ -127,6 +106,7 @@ h3
 
   p
     @include centrar-vertical(2rem,1rem)
+    //height, line-height
     margin: 0
     padding: 12px
 
@@ -151,14 +131,11 @@ h3
 .color-pink
   color: $rosa
 
-form
-  input
-    padding: 8px 12px
-    border: 1px solid $gris-claro
-    width: 50%
-  button
-    background-color: $rosa !important
-    border-radius: 5pc
+.form-floating>label
+  left: 12px
+
+.btn-danger
+  background-color: $rosa
 
 .marcas
   img
@@ -221,3 +198,17 @@ form
     padding: 0.3em
     span
       padding-right: 10px
+
+//Reglas pagina Pricings
+.rounded-custom-5
+  border-radius: 1.3rem
+.rounded-custom-3
+  border-radius: .7rem
+.gris-claro
+  color: $gris-claro
+.border-bottom-custom
+  border-bottom: 1px dashed $gris-claro  
+.pricing-cards-height
+  height: 490px
+.background-color-custom-btn
+  background-color: $blanco

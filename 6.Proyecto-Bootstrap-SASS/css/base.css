@@ -1,6 +1,6 @@
 h2 {
-  font-size: 2em;
-  font-weight: 900;
+  font-size: 3em;
+  font-weight: 700;
 }
 
 .parrafo-informativo {
@@ -9,8 +9,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5em;
-  font-weight: 800;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 .btn-nav-secundario {
@@ -74,14 +74,6 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
 
 #fondo-rosa {
   background-color: #f53160;
-}
-
-.mt-13rem {
-  margin-top: 13rem;
-}
-
-.mt-4rem {
-  margin-top: 4rem;
 }
 
 .boton-google {
@@ -199,15 +191,12 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
   color: #f53160;
 }
 
-form input {
-  padding: 8px 12px;
-  border: 1px solid #a7a7a7;
-  width: 50%;
+.form-floating > label {
+  left: 12px;
 }
 
-form button {
-  background-color: #f53160 !important;
-  border-radius: 5pc;
+.btn-danger {
+  background-color: #f53160;
 }
 
 .marcas img {
@@ -312,4 +301,28 @@ form button {
 
 .templates-left-list li span {
   padding-right: 10px;
+}
+
+.rounded-custom-5 {
+  border-radius: 1.3rem;
+}
+
+.rounded-custom-3 {
+  border-radius: .7rem;
+}
+
+.gris-claro {
+  color: #a7a7a7;
+}
+
+.border-bottom-custom {
+  border-bottom: 1px dashed #a7a7a7;
+}
+
+.pricing-cards-height {
+  height: 490px;
+}
+
+.background-color-custom-btn {
+  background-color: white;
 }

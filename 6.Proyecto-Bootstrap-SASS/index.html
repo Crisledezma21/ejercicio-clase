@@ -25,26 +25,38 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <a class="nav-link" href="./templates.html"><li class="nav-item">Templates</li></a>
-              <a class="nav-link" href="./pricing.html"><li class="nav-item">Pricing</li></a>
-              <a class="nav-link" href="./downloads.html"><li class="nav-item">Downloads</li></a>
+            <a class="nav-link" href="./templates.html">
+              <li class="nav-item">Templates</li>
+            </a>
+            <a class="nav-link" href="./pricing.html">
+              <li class="nav-item">Pricing</li>
+            </a>
+            <a class="nav-link" href="./downloads.html">
+              <li class="nav-item">Downloads</li>
+            </a>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Resources
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./about.html"><li>About</li></a>
+                <a class="dropdown-item" href="./about.html">
+                  <li>About</li>
+                </a>
               </ul>
             </li>
-              <a class="nav-link" href="./login.html"><li class="nav-item">Login</li></a>
-              <a id="fondo-rosa" class="nav-link" href="./signup.html"><li class="nav-item">Signup</li></a>
+            <a class="nav-link" href="./login.html">
+              <li class="nav-item">Login</li>
+            </a>
+            <a id="fondo-rosa" class="nav-link" href="./signup.html">
+              <li class="nav-item">Signup</li>
+            </a>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <main class="px-lg-5 text-center text-lg-start">
+  <main class="px-lg-5 text-center text-lg-start mt-5">
     <!-- Primer section contiene el video -->
     <section class="row container mx-auto px-0 pt-5 mt-lg-5">
       <div class="col-lg-4">
@@ -86,9 +98,9 @@
       </div>
     </section>
     <!-- Tercer section Baja nuestras aplicaciones -->
-    <section class="mb-lg-5">
+    <section class="mb-5">
       <h3 class="text-center mt-4rem mb-1">Download our Apps</h3>
-      <div class="d-flex flex-wrap justify-content-center container mx-auto devices mb-5 px-0">
+      <div class="d-flex flex-wrap justify-content-center container mx-auto devices px-0">
         <div class="d-flex flex-column">
           <i class="fa-brands fa-android fa-2xl"></i>
           <span>Android</span>
@@ -124,7 +136,7 @@
       </div>
     </section>
     <!-- Cuarto Section Organizar Tareas -->
-    <section class="container-fluid row mx-auto pt-lg-5 mb-5">
+    <section class="container-fluid row mx-auto mb-5">
       <div class="col-lg-4">
         <div class="columna-anuncio">
           <h2 class="mt-4rem">Organize & Manage Tasks & To-Do Lists</h2>
@@ -179,9 +191,8 @@
         </div>
       </div>
       <div class="alto-minimo col-lg-8 imagen-cambiable mx-auto position-relative p-0">
-        <div class="overlay position-absolute top-5 end-0">
-          <img id="overlay" class="mw-100" src="./assets/img/listView.svg" alt="">
-        </div>
+        <img id="overlay" class="mw-100 overlay position-absolute top-50 start-50 translate-middle"
+          src="./assets/img/listView.svg" alt="">
       </div>
     </section>
     <!-- Quinto Section Share Tasks Online -->
@@ -203,7 +214,8 @@
       <div class="col-lg-5">
         <img class="w-50" src="./assets/img/manageAside.svg" alt="">
         <h2 class="mt-4rem">Manage Team Tasks</h2>
-        <p class="mb-5 parrafo-informativo">Plan, organize, and prioritize upcoming tasks in the team roadmap. Taskade lets you automate your workflows and get work done.</p>
+        <p class="mb-5 parrafo-informativo">Plan, organize, and prioritize upcoming tasks in the team roadmap. Taskade
+          lets you automate your workflows and get work done.</p>
         <p class="animacion-underline m-0">Get Started<span class="px-2 m-0"><i
               class="fa-solid fa-circle-arrow-right"></i></span></p>
       </div>
@@ -237,10 +249,13 @@
             done.Supercharge your productivity with smart to do lists, outliner notes, and mind maps, in one unified
             workspace. Taskade is simple, beautiful, and fun. <span class="color-pink">Download for free</span> on Mac,
             Windows, Chromebook, iPhone, Android and more or try the web app instantly!</p>
-          <form>
-            <input type="text" name="input" id="input" placeholder="Enter your email">
-            <button id="form-btn" class="btn btn-danger" type="button">Sign up for free</button>
-          </form>
+          <div class="row">
+            <form class="form-floating col-12 col-md-6">
+              <input type="email" class="form-control" id="email-input" placeholder="Enter your email" value="">
+              <label for="email-input">Enter your email</label>
+            </form>
+            <button type="button" id="btn-email" class="btn btn-danger col-6 col-md-4 m-3 m-md-0">Signup for free</button>
+          </div>
         </div>
       </div>
     </section>
