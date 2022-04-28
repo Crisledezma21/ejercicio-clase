@@ -326,3 +326,20 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
 .background-color-custom-btn {
   background-color: white;
 }
+
+.downloads-list-style {
+  list-style: none;
+}
+
+.downloads-list-style a {
+  text-decoration: none;
+}
+
+.downloads-list-style li {
+  margin-bottom: 17px;
+  color: black;
+}
+
+.downloads-list-style li:hover {
+  background-color: #E5E5E5;
+}
