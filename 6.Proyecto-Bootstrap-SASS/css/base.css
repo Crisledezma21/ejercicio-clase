@@ -28,7 +28,47 @@ h3 {
   border-radius: 5px;
 }
 
-header {
+.downloads-list-style li:hover, .lighter-gray-bg {
+  background-color: #e5e5e5;
+}
+
+.gris-claro {
+  color: #a7a7a7;
+}
+
+.gris-mas-claro {
+  color: #e5e5e5;
+}
+
+.blanco {
+  color: white;
+}
+
+.rosa {
+  color: #f53160;
+}
+
+.negro {
+  color: black;
+}
+
+.bg-gris-claro {
+  background-color: #a7a7a7;
+}
+
+.bg-gris-mas-claro {
+  background-color: #e5e5e5;
+}
+
+.bg-blanco {
+  background-color: white;
+}
+
+.bg-rosa {
+  background-color: #f53160;
+}
+
+.bg-negro {
   background-color: black;
 }
 
@@ -62,10 +102,6 @@ header nav li:hover:after {
 header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
   background-color: black;
   color: white;
-}
-
-.dropdown-menu {
-  background-color: black;
 }
 
 .logo {
@@ -195,18 +231,9 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
   left: 12px;
 }
 
-.btn-danger {
-  background-color: #f53160;
-}
-
 .marcas img {
   padding: 5px;
   max-width: 75%;
-}
-
-.footer-up {
-  background-color: black;
-  color: white;
 }
 
 .footer-up li {
@@ -238,7 +265,6 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
 }
 
 .img-footer-container {
-  background-color: white;
   border-radius: 10px;
 }
 
@@ -311,20 +337,13 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
   border-radius: .7rem;
 }
 
-.gris-claro {
-  color: #a7a7a7;
-}
-
 .border-bottom-custom {
   border-bottom: 1px dashed #a7a7a7;
+  display: inline;
 }
 
 .pricing-cards-height {
   height: 490px;
-}
-
-.background-color-custom-btn {
-  background-color: white;
 }
 
 .downloads-list-style {
@@ -340,6 +359,24 @@ header nav li:hover:after #navbarDropdown .dropdown-menu li:hover {
   color: black;
 }
 
-.downloads-list-style li:hover {
-  background-color: #E5E5E5;
+.login-container img {
+  max-height: 3em;
+}
+
+.btn-apple {
+  background-color: black;
+}
+
+.forgot-password {
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  display: inline;
+}
+
+.forgot-password:hover {
+  border-bottom: 2px solid black;
+  display: inline;
+}
+
+#btn-signup-email {
+  background-color: #f53160;
 }
